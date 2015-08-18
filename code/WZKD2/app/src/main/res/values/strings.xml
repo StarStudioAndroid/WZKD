@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">WZKD2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="jianjie">电子科技大学活动中心是电子科技大学专门为学生开展课外活动，以及学生事务处理而配置的 ，它背靠着清水河，顺着学校东大门进入学校，很快就能看见这栋美丽的建筑。每到一年新生季，来报到的新生和家长就会 聚集在学生活动中心一楼的园厅里办理报道手续，场面壮观。而每到招聘季的时候，也会有许许多多的企业选择来到活动中 心进行招聘宣讲，不管你是不是正在找工作的毕业生，都可以了解一下企业招聘的标准，制定好自己的发展计划。学生活动 中心还有着许许多多的学生服务单位，他们为同学们提供了诸如教室借用、奖助学金处理、创新创业咨询...多种服务。 为大家的日常事务处理提供了巨大的帮助。</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_activity_jieshao">JieshaoActivity</string>
+    <string name="title_activity_zhian">ZhianActivity</string>
+    <string name="zhinanwenzi">天将降大任与是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为， 所以动心忍性，增益其所不能</string>
+</resources>

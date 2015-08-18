@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:background="@color/actionBarBg"
+        android:padding="10.0dip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:background="@mipmap/btn_back"
+            android:layout_width="60.0dip"
+            android:layout_height="30.0dip"
+            android:onClick="zhinan" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+        <TextView
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="活动中心:" />
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" >
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:onClick="toLeft"
+                android:src="@mipmap/go_toleft" />
+            <ViewFlipper
+                android:id="@+id/vf_jieshao"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dip" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/waijing"/>
+            </ViewFlipper>
+            <ImageView
+                android:onClick="toRight"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:src="@mipmap/go_toright"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@android:color/holo_blue_light"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"/>
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="25sp"
+                android:id="@+id/jianjie"
+                android:background="@color/zhinanbeijing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="简介:" />
+            <TextView
+                android:textSize="20.0sp"
+                android:id="@+id/jianjieneirong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/jianjie" />
+            <View
+                android:background="@android:color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10.0dip" />
+            <TextView
+                android:textSize="25.0sp"
+                android:id="@+id/zhinan"
+                android:background="@color/zhinanbeijing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="指南:" />
+            <TextView
+                android:textSize="20.0sp"
+                android:id="@+id/zhinanneirong"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="指南" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

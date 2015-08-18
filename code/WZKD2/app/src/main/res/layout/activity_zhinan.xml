@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/zhinanbeijing"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="@color/actionBarBg"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="tojieshao"
+            android:background="@mipmap/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="30.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出行指南"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:id="@+id/jianjie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:id="@+id/jianjieneirong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:id="@+id/zhinan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:id="@+id/zhinanneirong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                style="@style/zhinanstyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
