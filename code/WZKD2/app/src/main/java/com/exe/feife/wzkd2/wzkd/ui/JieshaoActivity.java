@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
@@ -83,7 +84,8 @@ public class JieshaoActivity extends Activity
         for (int i = 0; i < this.zhinan.length; i++)
         {
             this.zhinanTextView.append("\n" + this.zhinan[i] + "\n");
-            this.zhinanTextView.append(Html.fromHtml("<img src='"+R.mipmap.neijing+"'/>", this.imageGetter, new MTagHandler(this)));
+            //从这里可以看出，每个图片有一个自己的handler，所以只要为handler绑定图片的id，就会在点击的时候获取到图片的id
+            this.zhinanTextView.append(Html.fromHtml("<img src='"+R.mipmap.neijing+"'/>", this.imageGetter, new MTagHandler(this,R.mipmap.neijing)));
         }
         this.zhinanTextView.setMovementMethod(LinkMovementMethod.getInstance());
     }
@@ -144,9 +146,11 @@ public class JieshaoActivity extends Activity
         private int sIndex = 0;
         private int eIndex = 0;
         private final Context mContext;
+        private final int bitmapid;
 
-        public MTagHandler(Context context) {
+        public MTagHandler(Context context,int bitmapId) {
             mContext = context;
+            this.bitmapid=bitmapId;
         }
 
         public void handleTag(boolean opening, String tag, Editable output,
@@ -167,7 +171,7 @@ public class JieshaoActivity extends Activity
         private class MSpan extends ClickableSpan implements OnClickListener {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "sdfdsfsdfdsf", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, bitmapid+"", Toast.LENGTH_SHORT).show();
             }
         }
     }
