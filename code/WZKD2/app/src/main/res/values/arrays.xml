@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="huodongzhongxintu">
-        <item>@mipmap/waijing</item>
-        <item>@mipmap/waijing2</item>
-        <item>@mipmap/waijing3</item>
-        <item>@mipmap/neijing</item>
-        <item>@mipmap/neijing2</item>
+        <item>@mipmap/huodongzhongxin_3</item>
+        <item>@mipmap/huodongzhongxin_4</item>
+        <item>@mipmap/huodongzhongxin_5</item>
+        <item>@mipmap/huodongzhongxin_1</item>
+        <item>@mipmap/huodongzhongxin_2</item>
     </array>
     <string-array name="huodongzhongxinzhi">
-        <item>在一楼大厅的学生事务中心可以咨询到很多事情，无论你是找不到办事地点，还是不清楚办事流程， 学生科的助理同学都会热心地为你解惑，每到学校有大型讲座时，面聊上抢到的票也需要到这里来兑换</item>
-        <item>位于一楼的许多工作室都是大神出没的地方，没到新生季，他们都会展开招新工作，如果你是一个技术控，喜欢 在代码或者电子元件中寻找乐趣，那么就多多留意招新信息吧，对于刚报道的新人，大家的要求也只是踏实肯学就行， 并不需要你有多么好的基础</item>
+        <item>在一楼大厅的学生事务中心可以咨询到很多事情，无论你是找不到办事地点，还是不清楚办事流程， 学生科的助理同学都会热心地为你解惑，每到学校有大型讲座时，面聊上抢到的票也需要到这里来兑换。</item>
+        <item>位于一楼的许多工作室都是大神出没的地方，没到新生季，他们都会展开招新工作，如果你是一个技术控，喜欢 在代码或者电子元件中寻找乐趣，那么就多多留意招新信息吧，对于刚报道的新人，大家的要求也只是踏实肯学就行， 并不需要你有多么好的基础。</item>
         <item>位于二楼２２３的星辰工作室是电子科技大学官方论坛清水河畔的技术支持团队，有关河畔的问题可以到工作室寻求帮助。 清水河畔（www.bbs.uestc.edu.cn）是我校的内部论坛，无论你是学霸还是技术宅，是动漫达人还是ｌｏｌ最强王者， 都能在这里找到知音。</item>
         <item>需要举办活动或者开班会等事务的时候一般需要借用室外场地或者教室。借用室外场地需要到活动中心１１２校团委办公室 办理手续，借用教室首先需要到本学院教务科开具证明，然后需要到活动中心２１２学生教育科办理教室借用登记。</item>
     </string-array>
