@@ -8,7 +8,7 @@
     <style name="zhinanstyle">
         <item name="android:textSize">20.0sp</item>
         <item name="android:background">@drawable/shapes</item>
-        <item name="android:paddingTop">50.0dip</item>
+        <item name="android:paddingTop">40.0dip</item>
         <item name="android:paddingBottom">30.0dip</item>
         <item name="android:layout_marginTop">10.0dip</item>
         <item name="android:text">@string/zhinanwenzi</item>
