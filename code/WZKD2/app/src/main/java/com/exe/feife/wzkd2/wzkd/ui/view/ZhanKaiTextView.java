@@ -50,7 +50,7 @@ public class ZhanKaiTextView extends TextView
     this.he = (int)paramContext.getResources().getDimension(R.dimen.expand_textview_bottom);
     this.w = (this.bitmapDown.getWidth() + (int)paramContext.getResources().getDimension(R.dimen.expand_textview_right));
     this.h = (this.bitmapDown.getHeight() + (int)paramContext.getResources().getDimension(R.dimen.expand_textview_bottom));
-    this.title = "标题";
+    this.title = "tips:";
   }
 
   public boolean isExpanded()
@@ -63,10 +63,9 @@ public class ZhanKaiTextView extends TextView
     //画出标题
     Paint localPaint = new Paint();
     localPaint.setColor(getResources().getColor(android.R.color.black));
-    localPaint.setTextSize(60);
-    localPaint.setUnderlineText(true);
+    localPaint.setTextSize(40);
     localPaint.setStrokeWidth(10.0F);
-    canvas.drawText(this.title, this.we, 55 + this.he, localPaint);
+    canvas.drawText(this.title, this.we, 30 + this.he, localPaint);
     //画出图标
     this.PostitonX = (getWidth() - this.w);
     this.PostitonY = (getHeight() - this.h);
