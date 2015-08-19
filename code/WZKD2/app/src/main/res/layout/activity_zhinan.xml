@@ -7,14 +7,15 @@
         android:background="@color/actionBarBg"
         android:padding="5.0dip"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="0.08">
         <Button
             android:onClick="tojieshao"
             android:background="@mipmap/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:textSize="30.0sp"
+            android:textSize="20.0sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="出行指南"
@@ -22,8 +23,9 @@
     </RelativeLayout>
     <ScrollView
         android:scrollbars="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
         <LinearLayout android:orientation="vertical"
             android:paddingLeft="20.0dip"
             android:paddingRight="20.0dip"
