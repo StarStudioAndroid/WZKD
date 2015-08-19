@@ -1,70 +1,58 @@
 package com.exe.feife.wzkd2.wzkd.ui;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.Html;
-import android.text.Html.TagHandler;
-import android.text.Spanned;
-import android.text.method.LinkMovementMethod;
-import android.text.style.ClickableSpan;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.exe.feife.wzkd2.wzkd.R;
 import com.exe.feife.wzkd2.wzkd.data.WZKDAPP;
-import org.xml.sax.XMLReader;
 
 public class JieshaoActivity extends Activity
         implements GestureDetector.OnGestureListener
 {
     private GestureDetector gestureDetector;
-    Html.ImageGetter imageGetter = new Html.ImageGetter()
-    {
-        @Override
-        public Drawable getDrawable(String source) {
-            int id = Integer.parseInt(source);
-            Drawable drawable = context.getResources().getDrawable(id);
-            drawable.setBounds(0, 0,screenwidth/5, screenheight/5);
-            return drawable;
-        }
-    };
     private Resources res;
     int screenheight;
     int screenwidth;
     private TypedArray tupian;
     private ViewFlipper viewFlipper;
+    private TextView zhinanlist;
     private String weizhiname;
     private String[] zhinan;
-    private TextView zhinanTextView;
-    private Context context;
 
+
+    protected void onCreate(Bundle paramBundle)
+    {
+        super.onCreate(paramBundle);
+        setContentView(R.layout.activity_jieshao);
+        WZKDAPP.initJieshaoMap();
+        init();
+    }
+
+    //初始化一些控件
     private void init()
     {
-        int currentBitmp=0;
-        context=JieshaoActivity.this;
         this.weizhiname = "活动中心";
         this.res = getResources();
-        this.tupian = this.res.obtainTypedArray(((Integer)WZKDAPP.name_tupian.get(this.weizhiname)).intValue());
+        this.tupian = this.res.obtainTypedArray(((Integer) WZKDAPP.name_tupian.get(this.weizhiname)).intValue());
         this.zhinan = this.res.getStringArray(((Integer)WZKDAPP.name_zhinan.get(this.weizhiname)).intValue());
         this.viewFlipper = ((ViewFlipper)findViewById(R.id.vf_jieshao));
-        this.zhinanTextView = ((TextView)findViewById(R.id.zhinanneirong));
+        this.zhinanlist = ((TextView)findViewById(R.id.lv_zhinanneirong));
         this.gestureDetector = new GestureDetector(this, this);
         for (int i = 0; i < this.tupian.length(); i++)
         {
@@ -81,22 +69,12 @@ public class JieshaoActivity extends Activity
 
     private void xiezhinan()
     {
-        for (int i = 0; i < this.zhinan.length; i++)
+        for (int i=0;i<zhinan.length;i++)
         {
-            this.zhinanTextView.append("\n" + this.zhinan[i] + "\n");
-            //从这里可以看出，每个图片有一个自己的handler，所以只要为handler绑定图片的id，就会在点击的时候获取到图片的id
-            this.zhinanTextView.append(Html.fromHtml("<img src='"+R.mipmap.neijing+"'/>", this.imageGetter, new MTagHandler(this,R.mipmap.neijing)));
+            zhinanlist.append("Tip"+(i+1)+":\n\t\t"+zhinan[i]+"\n\n");
         }
-        this.zhinanTextView.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
-    protected void onCreate(Bundle paramBundle)
-    {
-        super.onCreate(paramBundle);
-        setContentView(R.layout.activity_jieshao);
-        WZKDAPP.initJieshaoMap();
-        init();
-    }
 
     public boolean onDown(MotionEvent paramMotionEvent) {return false;}
 
@@ -139,40 +117,5 @@ public class JieshaoActivity extends Activity
         this.viewFlipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.push_left_in));
         this.viewFlipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.push_left_out));
         this.viewFlipper.showNext();
-    }
-
-
-    public class MTagHandler implements TagHandler {
-        private int sIndex = 0;
-        private int eIndex = 0;
-        private final Context mContext;
-        private final int bitmapid;
-
-        public MTagHandler(Context context,int bitmapId) {
-            mContext = context;
-            this.bitmapid=bitmapId;
-        }
-
-        public void handleTag(boolean opening, String tag, Editable output,
-                              XMLReader xmlReader) {
-            Log.d("标签",tag);
-            if (tag.toLowerCase().equals("img")) {
-                if (opening) {
-                    sIndex = output.length();
-                } else {
-                    eIndex = output.length();
-                    output.setSpan(new MSpan(), sIndex, eIndex,
-                            Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-                    Log.d("内容",output.toString());
-                }
-            }
-        }
-
-        private class MSpan extends ClickableSpan implements OnClickListener {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context, bitmapid+"", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 }
