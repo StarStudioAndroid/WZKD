@@ -7,10 +7,290 @@
         <item>@mipmap/huodongzhongxin_1</item>
         <item>@mipmap/huodongzhongxin_2</item>
     </array>
+
     <string-array name="huodongzhongxinzhi">
         <item>在一楼大厅的学生事务中心可以咨询到很多事情，无论你是找不到办事地点，还是不清楚办事流程， 学生科的助理同学都会热心地为你解惑，每到学校有大型讲座时，面聊上抢到的票也需要到这里来兑换。</item>
         <item>位于一楼的许多工作室都是大神出没的地方，没到新生季，他们都会展开招新工作，如果你是一个技术控，喜欢 在代码或者电子元件中寻找乐趣，那么就多多留意招新信息吧，对于刚报道的新人，大家的要求也只是踏实肯学就行， 并不需要你有多么好的基础。</item>
-        <item>位于二楼２２３的星辰工作室是电子科技大学官方论坛清水河畔的技术支持团队，有关河畔的问题可以到工作室寻求帮助。 清水河畔（www.bbs.uestc.edu.cn）是我校的内部论坛，无论你是学霸还是技术宅，是动漫达人还是ｌｏｌ最强王者， 都能在这里找到知音。</item>
-        <item>需要举办活动或者开班会等事务的时候一般需要借用室外场地或者教室。借用室外场地需要到活动中心１１２校团委办公室 办理手续，借用教室首先需要到本学院教务科开具证明，然后需要到活动中心２１２学生教育科办理教室借用登记。</item>
+        <item>位于二楼２２３的星辰工作室是电子科技大学官方论坛清水河畔的技术支持团队，有关河畔的问题可以到工作室寻求帮助。 清水河畔（www.bbs.uestc.edu.cn）是我校的内部论坛，无论你是学霸还是技术宅，是动漫达人还是LOL最强王者， 都能在这里找到知音。</item>
+        <item>活动中心办事指南：</item>
     </string-array>
+
+    <array name="huodongzhongxint">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/huodongzhongxin_t1</item>
+    </array>
+
+    <array name="yishitangtu">
+        <item>@mipmap/yishitang_1</item>
+        <item>@mipmap/yishitang_2</item>
+        <item>@mipmap/yishitang_3</item>
+        <item>@mipmap/yishitang_4</item>
+        <item>@mipmap/yishitang_5</item>
+    </array>
+    <string-array name="yishitangzhi">
+        <item>一楼学子餐厅饭菜量大实惠，品种也很丰富，有泡菜、粉丝、冒菜（类似于麻辣烫）、盖浇饭等等很多美食,此外在学子食堂的水果超市可以随时品尝到新鲜的时令水果，学子吧台也有饮料、卤鸡蛋、烤肠等小吃出售。</item>
+        <item>二楼思源餐厅是一个标准化的学生食堂，餐厅以传统的川菜为主，但是结合了传统的东北、湖北、西北菜系，同学们在思源说不定就能吃到自己家乡的特色菜哦。除此之外思源餐厅还推出了“思源小厨餐”、“水果饮品”、“鲜榨豆浆”等许多特色美食，值得一试。</item>
+        <item>三楼的家园餐厅作为调剂餐厅具有相对较高的规格，吃不惯其它食堂的同学可以到家园餐厅来品尝一下这里的各种美食，不过要注意的是，这里的食物虽然相对更加精致，但是价格也更高，享受美食的同时也要注意自己的饭卡余额。</item>
+    </string-array>
+    <array name="yishitangt">
+        <item>@mipmap/yishitang_t1</item>
+        <item>@mipmap/yishitang_t2</item>
+        <item>@mipmap/yishitang_t3</item>
+    </array>
+
+    <array name="ershitangtu">
+        <item>@mipmap/ershitang_1</item>
+        <item>@mipmap/ershitang_2</item>
+        <item>@mipmap/ershitang_3</item>
+        <item>@mipmap/ershitang_4</item>
+        <item>@mipmap/ershitang_5</item>
+    </array>
+
+    <array name="ershitangt">
+        <item>@mipmap/ershitang_t1</item>
+        <item>@mipmap/ershitang_t2</item>
+        <item>@mipmap/ershitang_t3</item>
+    </array>
+
+    <string-array name="ershitangzhi">
+        <item>一楼银桦食堂的菜品种类丰富，有吧台随时提供小吃和饮料，水果超市提供新鲜的时令水果。银桦食堂的小炒味道很不错，点的时候可以根据自己的喜好搭配，晚上19：00-22：00银桦食堂还有美味的干锅、烤鱼等夜宵。</item>
+        <item>二楼紫荆餐厅是成电传奇人物“小炒哥”王义贤的服务地点，“小炒哥”是小炒窗口的配菜师傅，负责将同学们点的菜配好给炒菜师傅，小炒哥从事配菜工作已有二十余年，一直用自己的微笑和真诚为大家尽心地服务，正是因为有了一群像“小炒哥”这样的人为我们服务，我们才能在成电吃得健康，吃得营养。</item>
+        <item>三楼是芙蓉餐厅，芙蓉餐厅同家园餐厅一样，比一楼二楼的餐厅规格略高，提供更加精致的食物，同时消费的价格也更加高，享受美食的同时也要注意自己校园卡的余额哦。</item>
+    </string-array>
+
+    <array name="chengdianhuitangtu">
+        <item>@mipmap/chengdianhuitang_1</item>
+        <item>@mipmap/chengdianhuitang_2</item>
+    </array>
+
+    <string-array name="chengdianhuitangzhi">
+        <item>这是一个文艺范的青年必去之地，当然，如果你觉得自己不够文艺，也可以在那里假装文艺</item>
+        <item>保持安静，这是对演出者最起码的尊重</item>
+        <item>如何从演出中学习到课本给予不了你的东西，这是你应该思考的</item>
+    </string-array>
+
+    <array name="chengdianhuitangt">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+    <array name="tushuguantu">
+        <item>@mipmap/tushuguan_1</item>
+        <item>@mipmap/tushuguan_2</item>
+        <item>@mipmap/tushuguan_3</item>
+        <item>@mipmap/tushuguan_4</item>
+    </array>
+
+    <string-array name="tushuguanzhi">
+        <item>电子科技大学图书馆是需要凭卡进入的，进去时千万别忘记带学生卡</item>
+        <item>图书馆馆藏很多，但都是以门类划分书区的，搞清楚书的所属类别就可以迅速找到自己想要的书</item>
+        <item>不要仅仅纠结于自己专业的书籍，多了解一下其他专业的书对自己是大有裨益的</item>
+    </string-array>
+
+    <array name="tushuguant">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+    <array name="xiaoyiyuantu">
+        <item>@mipmap/xiaoyiyuan_1</item>
+        <item>@mipmap/xiaoyiyuan_2</item>
+        <item>@mipmap/xiaoyiyuan_3</item>
+        <item>@mipmap/xiaoyiyuan_4</item>
+    </array>
+
+    <string-array name="xiaoyiyuanzhi">
+        <item>电子科大校医院还是挺耗钱的，看病多带钱哦</item>
+        <item>上一条是开玩笑，带上医保卡</item>
+        <item>这里的医生和护士态度很友好，不要放弃治疗</item>
+    </string-array>
+
+
+    <array name="xiaoyiyuant">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+    <array name="yingxindadaotu">
+        <item>@mipmap/yingxingdadao_1</item>
+        <item>@mipmap/yingxingdadao_2</item>
+        <item>@mipmap/yingxingdadao_3</item>
+        <item>@mipmap/yingxingdadao_4</item>
+    </array>
+
+    <string-array name="yingxindadaozhi">
+        <item>想要看漫天黄叶远飞？千万别搞错了日子。深秋的11月是最佳银杏观赏季节</item>
+        <item>都看银杏了，还不赶紧找个妹子或基友，不然对不起这漫天浪漫啊</item>
+        <item>这里的银杏都是电子科大的物质与精神财富，所以请用心爱护</item>
+    </string-array>
+
+    <array name="yingxindadaot">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+    <array name="zhuloutu">
+        <item>@mipmap/zhulou_1</item>
+        <item>@mipmap/zhulou_2</item>
+        <item>@mipmap/zhulou_3</item>
+        <item>@mipmap/zhulou_4</item>
+    </array>
+
+    <string-array name="zhulouzhi">
+        <item>
+        电子科大主楼与银杏大道相连，可以从主楼正前方出发，欣赏一路之景
+        </item>
+        <item>
+        主楼前有四季常开之花，后有全年不落之泉，是避暑的好地方
+        </item>
+        <item>
+        嘘！别在主楼前大喊大叫，在学校的其他地方也应如此
+        </item>
+    </string-array>
+
+    <array name="zhulout">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+    <array name="keyanloutu">
+        <item>@mipmap/keyanlou_1</item>
+        <item>@mipmap/keyanlou_2</item>
+    </array>
+
+    <string-array name="keyanlouzhi">
+        <item>1、电子工程学院：\n简称电工，主要有四大研究方向：微波工程系、信息工程系、电子工程系、集成电路与系统。其学院机关包括：教务科、学生科、科研科、研究生科、综合教育科、学院办公室（人才与国际交流办公室）。</item>
+        <item>2、通信与信息工程学院：\n简称通信，主要有四大研究方向：通信工程系、网络工程系、信息工程系、物联网工程系。其学院机关包括：教务科、学生科、科研科、研究生科、综合教育科、人才与国际交流办公室、学院办公室、专业学位办公室、继续教育办公室。</item>
+    </string-array>
+
+    <array name="keyanlout">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+    <array name="pingxueloutu">
+        <item>@mipmap/pingxuelou_1</item>
+        <item>@mipmap/pingxuelou_2</item>
+    </array>
+
+    <string-array name="pingxuelouzhi">
+        <item>1、早自习：\n也许你认为上大学，终于可以睡个懒觉了。但电子神技大学一直秉承早自习的优良传统，各学院一般会要求学生在7:30到教学楼上半小时早自习，当然不同院系、班级的具体情况不一样，要求也不尽相同。但小编认为上不上早自习最重要的在于个人意愿。</item>
+        <item>2、借教室：\n在大学班级没有固定的教室，如果要在教室组织活动比如晚会、交流会就要提前将教室借好。一般的想借用教室先找辅导员，然后根据时间地点在网上申请，申请好后打印相关开据，再将开据交到教学楼A区的多媒体管理中心即可。</item>
+    </string-array>
+
+    <array name="pingxuelout">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+    <array name="shiyanloutu">
+        <item>@mipmap/shiyanlou_1</item>
+        <item>@mipmap/shiyanlou_2</item>
+        <item>@mipmap/shiyanlou_3</item>
+    </array>
+
+    <string-array name="shiyanlouzhi">
+        <item>1、选课与考试：\n实验楼除了负责教学研究工作外，每学期还会为部分学生提供选课机房，保证学生选课的顺利进行。另外每年的计算机等级考试会在这里进行。 </item>
+        <item>2、电子工程学院创新创业中心：\n想要提高科技创新能力和动手实践能力的同学看过来！电子工程学院创新创业中心原名电信科协成立在此，该中心包括 “电子科大-美国国家半导体实验室”（清水河校区科研二号楼431实验室），学生开放实验室（清水河校区科研二号楼422实验室），《E路飞扬》工作室（清水河校区科研二号楼420实验室）等三个实验室。实验室配套设施齐全，试验设备完善。实验室成员包括本科各个年级，还包括一定的研究生。现有成员100余人。</item>
+    </string-array>
+
+    <array name="shiyanlout">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+    <array name="tiyuyundongzhongxintu">
+        <item>@mipmap/tiyuyundongzhongxin_1</item>
+        <item>@mipmap/tiyuyundongzhongxin_2</item>
+        <item>@mipmap/tiyuyundongzhongxin_3</item>
+        <item>@mipmap/tiyuyundongzhongxin_4</item>
+        <item>@mipmap/tiyuyundongzhongxin_5</item>
+        <item>@mipmap/tiyuyundongzhongxin_6</item>
+        <item>@mipmap/tiyuyundongzhongxin_7</item>
+        <item>@mipmap/tiyuyundongzhongxin_8</item>
+        <item>@mipmap/tiyuyundongzhongxin_9</item>
+    </array>
+
+    <string-array name="tiyuyundongzhongxinzhi">
+        <item>1、最新通知：\n暑假期间（7月22日星期三至8月26日星期三），清水河校区体育场馆管理中心各体育场馆开放时间调整如下：\n游泳馆：15:00—20:30 体育馆：15:00—20:30\n茶坊：16:00—20:00 台球室：15:30—20:30\n卡务中心充值、办卡时间：15:00—18:30\n健身房（体育运动中心派菲特健身）：14:00—21:00\n办卡中心地址：清水河校区体育馆南2 号门旁\n办卡时间：周一至周五（工作日） 9:00—18:00\n联系电话：028-61831593</item>
+        <item>2、运动卡办理流程(运动卡不能用于游泳馆、游泳场):\n（一）办卡者需携带以下相关合格表及证件：\n本校学生持学生证；教工持工作证；教工直系亲属持本人身份证，证明与我校教工关系的相关证件（如：结婚证、户口本等）及该教工工作证，享受教工价格；非本校人员持身份证；\n（二）由办卡者本人持上述证件到运动卡办卡中心办理（现场取相）。\n注： 1）每张卡收取工本费￥10.00（拾元）。\n2）运动卡工本费不予退还。\n3）充值以50 元为单位；\n4）训练馆储值卡开卡费￥50 元（包括工本费10 元及40 元卡内可用余额）。\n5）学生卡仅供在校学生使用，毕业年7 月10 日起系统将自动锁卡。</item>
+        <item>3、游泳卡办理流程（游泳卡可用于体育馆、训练馆等体育运动中心内其他消费项目）：\n（一）需办理游泳卡者，到相关医疗机构体检，取得游泳专项体检合格表。\n（二）办卡者需携带以下相关合格表及证件：\n1）游泳体检合格表（学生去校医院体检，费用5元）；\n2）本校学生持学生证；教工持工作证；教工直系亲属持本人身份证，证明与我校教工关系的相关证件（如：结婚证、户口本等）及该教工工作证，享受教工价格；非本校人员持身份证；\n（三）由办卡者本人持上述证件到运动卡办卡中心办理（现场取相）。\n注： 1）每张卡收取工本费￥10.00（拾元）。\n2）办理游泳馆游泳卡须预存更衣柜钥匙押金￥50.00（伍拾元），待注销游泳卡时原数退还押金（伍拾元），工本费不予退还。\n3）充值以50 元为单位；储值卡开卡费￥50 元（包括工本费10 元及40 元卡内可用余额）。\n4）办理游泳卡者，须于自办卡日起的1 年后，将最新体检合格证交至办卡中心以激活游泳卡，供继续使用。\n5）学生卡仅供在校学生使用，毕业年7 月10 日起系统将自动锁卡。</item>
+        <item>4、体育馆开放时间开放时间及收费标准：</item>
+        <item>5、游泳馆开放时间开放时间及收费标准：</item>
+        <item>6、派菲特健身中心开放时间开放时间及收费标准：</item>
+    </string-array>
+
+    <array name="tiyuyundongzhongxint">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/tiyuyundongzhongxin_t1</item>
+        <item>@mipmap/tiyuyundongzhongxin_t2</item>
+        <item>@mipmap/tiyuyundongzhongxin_t3</item>
+    </array>
+
+    <array name="zhonghexunlianguantu">
+        <item>@mipmap/zonghexunlianguan_1</item>
+        <item>@mipmap/zonghexunlianguan_2</item>
+        <item>@mipmap/zonghexunlianguan_3</item>
+        <item>@mipmap/zonghexunlianguan_4</item>
+        <item>@mipmap/zonghexunlianguan_5</item>
+        <item>@mipmap/zonghexunlianguan_6</item>
+        <item>@mipmap/zonghexunlianguan_7</item>
+    </array>
+
+    <string-array name="zonghexunlianguanzhi">
+        <item>1、军训：\n新生最开始接触综合训练馆是在军训的时候，军训分队、军训集体会议、下雨天等学生都会集合到综合训练馆中。</item>
+        <item>2、训练馆开放时间和收费标准:</item>
+        <item>3、凭卡进馆：\n除上体育课之外，学生进馆至少要有一人持有运动卡（或游泳卡）。办卡流程请参考“体育运动中心”-->“指南”信息。</item>
+    </string-array>
+
+    <array name="zonghexunlianguant">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/zonghexunlianguan_t1</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
+
+
+    <array name="shangyejietu">
+        <item>@mipmap/shangyejie_1</item>
+        <item>@mipmap/shangyejie_2</item>
+        <item>@mipmap/shangyejie_3</item>
+        <item>@mipmap/shangyejie_4</item>
+        <item>@mipmap/shangyejie_5</item>
+    </array>
+
+    <string-array name="shangyejiezhi">
+        <item>当不想吃食堂的饭菜而又不想走很远出去吃的时候商业街绝对是一个很好的去处，你可以和朋友一起点几个小菜，也可以尝尝别有一番风味的小吃，一个人不想太麻烦，卤肉卷、肉夹馍、卷饼都是很不错的选择。</item>
+        <item>商业街的二楼有着学校的唯一的一个书店，没有好的复习计划的时候，去书店淘一本复习资料做做也能规避不少挂科的风险，不过还是要注意，知识还是要从书本和课堂上习得，零时抱佛脚只能应付考试。</item>
+        <item>各大快递的位置：除了韵达快递其它的快递取货点都在商业街，申通快递在建设银行后面，商业街的入口处，中通快递在二楼，申通的正上方，京东的取货点在三楼，顺丰快递也在三楼。</item>
+    </string-array>
+    <array name="shangyejiet">
+        <item>@mipmap/shangyejie_t1</item>
+        <item>@mipmap/shangyejie_t2</item>
+        <item>@mipmap/shangyejie_t3</item>
+    </array>
+
+    <array name="zongheloutu">
+        <item>@mipmap/zonghelou_1</item>
+        <item>@mipmap/zonghelou_2</item>
+        <item>@mipmap/zonghelou_3</item>
+    </array>
+
+    <string-array name="zonghelouzhi">
+        <item>后勤集团的很多办公室都在综合楼，需要学车办理暂住证的同学也需要首先到综合楼办理居住证明。</item>
+        <item>综合楼4楼是政治与公共管理学院办公室的所在地，3楼是外国语学院办公室的所在地，如果有事需要前去办理，不要找错了地方哦。</item>
+    </string-array>
+
+    <array name="zonghelout">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </array>
 </resources>

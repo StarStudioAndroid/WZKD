@@ -4,60 +4,90 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
-        android:background="@color/actionBarBg"
-        android:padding="5.0dip"
+        android:padding="10dp"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.08">
-        <Button
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
             android:onClick="tojieshao"
-            android:background="@mipmap/btn_back"
+            android:background="@mipmap/icon_more_goback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:textSize="20.0sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="出行指南"
+            style="@style/style_title"
             android:layout_centerInParent="true" />
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
     <ScrollView
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:padding="10dp"
         android:layout_weight="0.9">
         <LinearLayout android:orientation="vertical"
-            android:paddingLeft="20.0dip"
-            android:paddingRight="20.0dip"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <View
+                    android:layout_gravity="center_vertical"
+                    android:background="#36648B"
+                    android:layout_width="6dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    style="@style/style_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公交路线:" />
+            </LinearLayout>
             <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:tag="周边路线"
+                android:text="@string/zhoubianluxian"
                 style="@style/zhinanstyle" />
             <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
                 android:id="@+id/jianjie"
-                android:layout_width="wrap_content"
+                android:tag="市内车站"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10.0dip"
+                android:text="@string/shineichezhan"
                 style="@style/zhinanstyle" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <View
+                    android:layout_gravity="center_vertical"
+                    android:background="#36648B"
+                    android:layout_width="6dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成灌快铁" />
+            </LinearLayout>
             <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="成都到青城山"
                 android:id="@+id/jianjieneirong"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10.0dip"
-                style="@style/zhinanstyle" />
-            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
-                android:id="@+id/zhinan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10.0dip"
-                style="@style/zhinanstyle" />
-            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
-                android:id="@+id/zhinanneirong"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10.0dip"
+                android:text="@string/qingchenshan"
                 style="@style/zhinanstyle" />
         </LinearLayout>
     </ScrollView>

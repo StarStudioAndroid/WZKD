@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -17,7 +18,7 @@ import com.exe.feife.wzkd2.wzkd.R;
 public class ZhanKaiTextView extends TextView
 {
   private static int MAX_LINE_NUM;
-  private static int MIN_LINE_NUM = 1;
+  private static int MIN_LINE_NUM = 3;
   float PostitonX;
   float PostitonY;
   Bitmap bitmapDown;
@@ -29,6 +30,7 @@ public class ZhanKaiTextView extends TextView
   private String title;
   int w;
   int we;
+  Context context;
 
   static
   {
@@ -39,18 +41,23 @@ public class ZhanKaiTextView extends TextView
   {
     super(paramContext, paramAttributeSet);
     init(paramContext, paramAttributeSet);
+    context=paramContext;
   }
 
   private void init(Context paramContext, AttributeSet paramAttributeSet)
   {
     setMaxLines(this.lineNum);
-    this.bitmapDown = BitmapFactory.decodeResource(getResources(), R.mipmap.update_detail_down);
-    this.bitmapUp = BitmapFactory.decodeResource(getResources(), R.mipmap.update_detail_up);
+    this.bitmapDown = BitmapFactory.decodeResource(getResources(), R.mipmap.icon_detail_arrow_down);
+    this.bitmapUp = BitmapFactory.decodeResource(getResources(), R.mipmap.icon_detail_arrow_up);
     this.we = (int)paramContext.getResources().getDimension(R.dimen.expand_textview_right);
     this.he = (int)paramContext.getResources().getDimension(R.dimen.expand_textview_bottom);
     this.w = (this.bitmapDown.getWidth() + (int)paramContext.getResources().getDimension(R.dimen.expand_textview_right));
     this.h = (this.bitmapDown.getHeight() + (int)paramContext.getResources().getDimension(R.dimen.expand_textview_bottom));
     this.title = "tips:";
+    if (this.getTag()!=null)
+    {
+      this.title=(String)this.getTag();
+    }
   }
 
   public boolean isExpanded()
@@ -61,11 +68,14 @@ public class ZhanKaiTextView extends TextView
   protected void onDraw(Canvas canvas)
   {
     //画出标题
-    Paint localPaint = new Paint();
-    localPaint.setColor(getResources().getColor(android.R.color.black));
-    localPaint.setTextSize(40);
-    localPaint.setStrokeWidth(10.0F);
-    canvas.drawText(this.title, this.we, 30 + this.he, localPaint);
+    Paint paint = new Paint();
+    paint.setColor(getResources().getColor(R.color.content));
+    paint.setTextSize((int)context.getResources().getDimension(R.dimen.font_content));
+    paint.setStrokeWidth(10.0F);
+    canvas.drawText(this.title, this.we, 30 + this.he, paint);
+    //画出分隔直线
+    paint.setStrokeWidth(2);
+    canvas.drawLine(we,70,getWidth()-we,70,paint);
     //画出图标
     this.PostitonX = (getWidth() - this.w);
     this.PostitonY = (getHeight() - this.h);

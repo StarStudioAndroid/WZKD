@@ -6,12 +6,30 @@
     </style>
 
     <style name="zhinanstyle">
-        <item name="android:textSize">20.0sp</item>
+        <item name="android:textSize">@dimen/font_content</item>
+        <item name="android:textColor">@color/content</item>
         <item name="android:background">@drawable/shapes</item>
-        <item name="android:paddingTop">40.0dip</item>
+        <item name="android:paddingTop">60.0dip</item>
         <item name="android:paddingBottom">30.0dip</item>
         <item name="android:layout_marginTop">10.0dip</item>
         <item name="android:text">@string/zhinanwenzi</item>
+    </style>
+
+    <!--标题字体样式-->
+    <style name="style_title">
+        <item name="android:textColor">@color/title</item>
+        <item name="android:textSize">@dimen/font_title</item>
+    </style>
+    <!--副标题字体样式-->
+    <style name="style_subtitle">
+        <item name="android:textColor">@color/subtitle</item>
+        <item name="android:textSize">@dimen/font_subtitle</item>
+    </style>
+    <!--内容字体样式-->
+    <style name="style_content">
+        <item name="android:textColor">@color/content</item>
+        <item name="android:textSize">@dimen/font_content</item>
+        <item name="android:typeface">sans</item>
     </style>
 
 </resources>
