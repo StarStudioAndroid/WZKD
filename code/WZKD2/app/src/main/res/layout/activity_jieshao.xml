@@ -64,12 +64,12 @@
                         android:layout_height="wrap_content"
                         android:text="地点名字:" />
                 </LinearLayout>
-                    <com.exe.feife.wzkd2.wzkd.ui.view.MyImageFlipper
+                    <com.exe.feife.wzkd2.wzkd.ui.view.SlideView
                         android:id="@+id/vf_jieshao"
                         android:layout_width="match_parent"
                         android:layout_height="230dp" >
 
-                    </com.exe.feife.wzkd2.wzkd.ui.view.MyImageFlipper>
+                    </com.exe.feife.wzkd2.wzkd.ui.view.SlideView>
             </LinearLayout>
             <TextView
                 android:layout_marginTop="8dp"

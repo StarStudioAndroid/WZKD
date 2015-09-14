@@ -31,8 +31,11 @@ import com.exe.feife.wzkd2.wzkd.R;
 import com.exe.feife.wzkd2.wzkd.data.Values;
 import com.exe.feife.wzkd2.wzkd.data.WZKDAPP;
 import com.exe.feife.wzkd2.wzkd.ui.view.MyImageFlipper;
+import com.exe.feife.wzkd2.wzkd.ui.view.SlideView;
 
 import org.xml.sax.XMLReader;
+
+import java.util.ArrayList;
 
 import static android.content.SharedPreferences.*;
 
@@ -46,8 +49,9 @@ public class JieshaoActivity extends Activity
     private String weizhiname;
     private String[] zhinan;
     private int[] zhinantupianIds;
+    private ArrayList<Integer> jieshaotupianIds;
 
-    private MyImageFlipper viewFlipper;
+    private SlideView slideView;
     private TextView zhinanlist;
     private ScrollView scrollView;
     private TextView didianName;
@@ -96,7 +100,7 @@ public class JieshaoActivity extends Activity
         this.zhinantupian=this.res.obtainTypedArray(((Integer) WZKDAPP.name_tips.get(this.weizhiname)).intValue());
         this.tupian = this.res.obtainTypedArray(((Integer) WZKDAPP.name_tupian.get(this.weizhiname)).intValue());
         this.zhinan = this.res.getStringArray(((Integer) WZKDAPP.name_zhinan.get(this.weizhiname)).intValue());
-        this.viewFlipper = ((MyImageFlipper)findViewById(R.id.vf_jieshao));
+        this.slideView = (SlideView) findViewById(R.id.vf_jieshao);
         this.zhinanlist = ((TextView)findViewById(R.id.lv_zhinanneirong));
         this.didianName= (TextView) findViewById(R.id.tv_jieshao_didianname);
         zhinantupianIds=new int[zhinantupian.length()];
@@ -106,9 +110,16 @@ public class JieshaoActivity extends Activity
             zhinantupianIds[i]=zhinantupian.getResourceId(i,0);
         }
         zhinantupian.recycle();
+        //将介绍图片的id放到数组里面
+        jieshaotupianIds=new ArrayList<Integer>();
+        for(int i=0;i<tupian.length();i++)
+        {
+            jieshaotupianIds.add(tupian.getResourceId(i,0));
+        }
+        tupian.recycle();
         didianName.setText(weizhiname);
         jianjieneirong.setText(context.getString((Integer) WZKDAPP.name_jianjie.get(this.weizhiname)));
-        viewFlipper.addImages(tupian);
+        slideView.addPictureIds(jieshaotupianIds,R.mipmap.icon_viewpager_dot_normal,R.mipmap.icon_viewpager_dot_focus);
         DisplayMetrics localDisplayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(localDisplayMetrics);
         this.screenheight = localDisplayMetrics.heightPixels;
@@ -126,7 +137,7 @@ public class JieshaoActivity extends Activity
     //解决滑动冲突问题
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        viewFlipper.onTouchEvent(ev);
+        slideView.onTouchEvent(ev);
         return super.dispatchTouchEvent(ev);
     }
 

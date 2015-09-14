@@ -14,4 +14,12 @@
     <color name="pubbg">#eeeeee</color>
     <color name="pubdivider">#e5e5e5</color>
     <color name="divider">#cccccc</color>
+
+    <color name="tomato">#FF6347</color>
+    <!-- 西红柿色 -->
+    <!-- 亮蓝灰 -->
+    <color name="slategray">#708090</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+
 </resources>

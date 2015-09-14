@@ -38,8 +38,8 @@ public class MyImageFlipper extends ViewFlipper implements GestureDetector.OnGes
             ImageView localImageView = new ImageView(mContext);
             localImageView.setImageDrawable(tupian.getDrawable(i));
             this.addView(localImageView, new ViewGroup.LayoutParams(-1, -1));
-            tupian.recycle();
         }
+        tupian.recycle();
     }
 
 
