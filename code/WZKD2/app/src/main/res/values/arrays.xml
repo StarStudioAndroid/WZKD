@@ -293,4 +293,43 @@
         <item>@mipmap/ic_launcher</item>
         <item>@mipmap/ic_launcher</item>
     </array>
+
+    <array name="shijianguangchangtu">
+        <item>@mipmap/shijianguangchang_1</item>
+        <item>@mipmap/shijianguangchang_2</item>
+        <item>@mipmap/shijianguangchang_3</item>
+    </array>
+
+    <array name="shijianguangchangt">
+        <item>@mipmap/shijianguangchang_t1</item>
+        <item>@mipmap/shijianguangchang_t2</item>
+    </array>
+
+    <array name="shijianguangchangzhi">
+        <item>时间广场上面右侧有一座日晷，随着太阳东升西落，日晷上的影子准确地记录着时间，这简单而精巧的设计为我们展示了先祖的古老的智慧。</item>
+        <item>时间广场中心有阳刻的‘子’，‘丑’，‘寅’，‘卯’，‘辰’，‘巳’，‘午’，‘未’，‘申’，‘酉’，‘戌’，‘亥’十二个地支和“青龙”、“白虎”、“朱雀”、“玄武”四个中国古代的神兽，充满了浓浓的中国气息。</item>
+    </array>
+
+    <string-array name="shiwaiyundongchangzhi">
+        <item>室外运动场平面图：</item>
+        <item>室外运动场的篮球场是大家的最爱，在天气凉爽的时候约上几个朋友一起打打球是件再惬意不过的事情了，既能锻炼身体，也可以放松身心，缓解学习压力，不过激烈的对抗运动中要注意保护好自己，不要因此受伤哦！</item>
+        <item>电子科技大学有一群热爱夜跑的小伙伴们，在凉爽的夜晚，听着音乐，在塑胶跑道上慢跑，既能锻炼身体，也可以放松心情。每天夜晚，喜爱夜跑的同学们就会汇聚在田径场上享受每天属于自己的快乐时光，不过晚间跑步虽然凉爽，但是千万要小心不要撞到他人，也要防止不慎跌倒哦！</item>
+        <item>室外运动场外的零食店“红砖屋”不仅能为大家运动过后提供解渴的饮料，同时也能给大家提供篮球打气等服务。</item>
+    </string-array>
+
+    <array name="shiwaiyundongchangtu">
+        <item>@mipmap/shiwaiyundongchang_1</item>
+        <item>@mipmap/shiwaiyundongchang_2</item>
+        <item>@mipmap/shiwaiyundongchang_3</item>
+        <item>@mipmap/shiwaiyundongchang_4</item>
+        <item>@mipmap/shiwaiyundongchang_5</item>
+    </array>
+
+    <array name="shiwaiyundongchangt">
+        <item>@mipmap/shiwaiyundongchang_t1</item>
+        <item>@mipmap/shiwaiyundongchang_t2</item>
+        <item>@mipmap/shiwaiyundongchang_t3</item>
+        <item>@mipmap/shiwaiyundongchang_t4</item>
+    </array>
+
 </resources>

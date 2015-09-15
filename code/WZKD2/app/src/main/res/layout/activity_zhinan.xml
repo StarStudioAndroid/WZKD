@@ -57,12 +57,25 @@
                 android:text="@string/zhoubianluxian"
                 style="@style/zhinanstyle" />
             <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
-                android:id="@+id/jianjie"
                 android:tag="市内车站"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10.0dip"
                 android:text="@string/shineichezhan"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="市内高校"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/shineigaoxiao"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="市内景点"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/shinejingdian"
                 style="@style/zhinanstyle" />
             <LinearLayout
                 android:layout_marginTop="10dp"
@@ -83,11 +96,35 @@
             </LinearLayout>
             <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
                 android:tag="成都到青城山"
-                android:id="@+id/jianjieneirong"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10.0dip"
                 android:text="@string/qingchenshan"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="成都到都江堰"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/dujiangyan"
+                style="@style/zhinanstyle" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="396时刻表"
+                style="@style/style_subtitle"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/shikebiao"/>
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="特别声明："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/zhuyi"
                 style="@style/zhinanstyle" />
         </LinearLayout>
     </ScrollView>

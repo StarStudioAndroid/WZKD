@@ -43,4 +43,13 @@
         android:id="@+id/spinner"
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学霸"
+        android:id="@+id/button4"
+        android:layout_above="@+id/button"
+        android:onClick="xueba"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

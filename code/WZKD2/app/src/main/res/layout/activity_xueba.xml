@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/zhinanbeijing"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:onClick="finish"
+            android:background="@mipmap/icon_more_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学霸攻略"
+            style="@style/style_title"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="0.9">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <View
+                    android:layout_gravity="center_vertical"
+                    android:background="#36648B"
+                    android:layout_width="6dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    style="@style/style_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一、大一主要课程简介:" />
+            </LinearLayout>
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="小贴士:"
+                android:text="@string/xuebazhuyi"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="英语"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/yingyu"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="微积分"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/weijifen"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="线性代数"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/xiandai"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="C语言"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/cyuyan"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="体育课"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/tiyu"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="思想道德修养与法律基础"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/sixiu"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="电路分析"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/dianfen"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="大学物理"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/dawu"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="工程制图"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/gongtu"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="中国近现代史纲要"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/jindaishi"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="数学实验"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/matlab"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="电子实验"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/dianzishiyan"
+                style="@style/zhinanstyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <View
+                    android:layout_gravity="center_vertical"
+                    android:background="#36648B"
+                    android:layout_width="6dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    style="@style/style_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="二、关于大学考试" />
+            </LinearLayout>
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="小贴士:"
+                android:text="@string/tieshi1"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="课业考试:"
+                android:text="@string/keyekaoshi"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="课外考试:"
+                android:text="@string/kewaikaoshi"
+                style="@style/zhinanstyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <View
+                    android:layout_gravity="center_vertical"
+                    android:background="#36648B"
+                    android:layout_width="6dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    style="@style/style_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三、漫步图书馆" />
+            </LinearLayout>
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="图书馆简介："
+                android:text="@string/tushuguanjianjie"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="文献资源建设："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/wenxian"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="自动化建设："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/zidonghuajianshe"
+                style="@style/zhinanstyle" />
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:tag="主要服务信息："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/zhuyaofuwuxinxi"
+                style="@style/zhinanstyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <View
+                    android:layout_gravity="center_vertical"
+                    android:background="#36648B"
+                    android:layout_width="6dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    style="@style/style_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="四、学长留言板" />
+            </LinearLayout>
+            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="  "
+                android:text="@string/xuezhang"
+                style="@style/zhinanstyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

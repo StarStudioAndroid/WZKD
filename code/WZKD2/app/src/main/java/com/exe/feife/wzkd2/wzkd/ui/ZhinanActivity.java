@@ -16,7 +16,19 @@ public class ZhinanActivity extends Activity
     }
 
     public void tojieshao(View view) {
-        Intent intent=new Intent(ZhinanActivity.this,JieshaoActivity.class);
-        startActivity(intent);
+       finish();
+    }
+
+    /*
+    * 查看公交表大图*/
+    public void view(View v)
+    {
+        //请在这里设置点击跳转的Intent，
+                /*
+                *
+                Intent i=new Intent(context,ActivityBroswePic.class);
+                i.putExtra("picture", R.mipmap.shikebiao);
+                startActivity(i);
+                */
     }
 }

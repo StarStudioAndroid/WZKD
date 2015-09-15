@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -34,7 +35,7 @@ public class ZhanKaiTextView extends TextView
 
   static
   {
-    MAX_LINE_NUM = 20;
+    MAX_LINE_NUM = 60;
   }
 
   public ZhanKaiTextView(Context paramContext, AttributeSet paramAttributeSet)
@@ -70,7 +71,8 @@ public class ZhanKaiTextView extends TextView
     //画出标题
     Paint paint = new Paint();
     paint.setColor(getResources().getColor(R.color.content));
-    paint.setTextSize((int)context.getResources().getDimension(R.dimen.font_content));
+    paint.setTextSize((int) context.getResources().getDimension(R.dimen.font_content));
+    paint.setTypeface(Typeface.SANS_SERIF);
     paint.setStrokeWidth(10.0F);
     canvas.drawText(this.title, this.we, 30 + this.he, paint);
     //画出分隔直线

@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
             Values.PINGXUELOU,Values.SHANGEYEJIE,Values.TIYUYUNDONGZHONGXIN,
             Values.XIAOYIYUAN,Values.TUSHUGUAN,Values.ZHULOU,
             Values.YINGXINGDADAO,Values.ZONGHELOU,Values.ZONGHEXUNLIANGUAN,Values.YISHITANG,
-            Values.ERSHITANG,Values.SHIYANLOU};
+            Values.ERSHITANG,Values.SHIYANLOU,Values.SHIJIANGUANGCHANG,Values.SHIWAIYUNDONGCHANG};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,12 @@ public class MainActivity extends Activity {
     public void jieshao(View v)
     {
         Intent intent=new Intent(this,JieshaoActivity.class);
+        startActivity(intent);
+    }
+
+    public void xueba(View v)
+    {
+        Intent intent=new Intent(this,XuebaActivity.class);
         startActivity(intent);
     }
 

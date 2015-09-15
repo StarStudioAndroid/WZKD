@@ -82,5 +82,14 @@ public class WZKDAPP extends Application
     name_tupian.put(Values.ERSHITANG,Integer.valueOf(R.array.ershitangtu));
     name_tips.put(Values.ERSHITANG,Integer.valueOf(R.array.ershitangt));
     name_jianjie.put(Values.ERSHITANG,R.string.ershitang);
+    name_zhinan.put(Values.SHIJIANGUANGCHANG,Integer.valueOf(R.array.shijianguangchangzhi));
+    name_tupian.put(Values.SHIJIANGUANGCHANG,Integer.valueOf(R.array.shijianguangchangtu));
+    name_tips.put(Values.SHIJIANGUANGCHANG,Integer.valueOf(R.array.shijianguangchangt));
+    name_jianjie.put(Values.SHIJIANGUANGCHANG,R.string.shijianguangchang);
+    name_zhinan.put(Values.SHIWAIYUNDONGCHANG,Integer.valueOf(R.array.shiwaiyundongchangzhi));
+    name_tupian.put(Values.SHIWAIYUNDONGCHANG,Integer.valueOf(R.array.shiwaiyundongchangtu));
+    name_tips.put(Values.SHIWAIYUNDONGCHANG,Integer.valueOf(R.array.shiwaiyundongchangt));
+    name_jianjie.put(Values.SHIWAIYUNDONGCHANG,R.string.shiwaiyundongchang);
+
   }
 }

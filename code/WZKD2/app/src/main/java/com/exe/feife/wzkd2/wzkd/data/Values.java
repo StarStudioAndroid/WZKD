@@ -17,6 +17,8 @@ public interface Values
   String ZONGHELOU="综合楼";
   String SHANGEYEJIE="商业街";
   String ERSHITANG="二食堂";
+  String SHIWAIYUNDONGCHANG="室外运动场";
+  String SHIJIANGUANGCHANG="时间广场";
 
   String WEIZHINAME = "weizhiname";
 }
