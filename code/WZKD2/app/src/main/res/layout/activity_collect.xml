@@ -12,7 +12,7 @@
         <ImageButton
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:background="@mipmap/icon_more_goback"
+            android:background="@mipmap/icon_detail_goback"
             android:scaleType="fitXY"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

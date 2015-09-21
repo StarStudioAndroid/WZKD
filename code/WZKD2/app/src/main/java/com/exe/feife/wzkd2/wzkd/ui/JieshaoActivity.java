@@ -18,19 +18,16 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ViewFlipper;
 import android.text.Html;
 import android.text.Html.TagHandler;
 
 import com.exe.feife.wzkd2.wzkd.R;
 import com.exe.feife.wzkd2.wzkd.data.Values;
 import com.exe.feife.wzkd2.wzkd.data.WZKDAPP;
-import com.exe.feife.wzkd2.wzkd.ui.view.MyImageFlipper;
 import com.exe.feife.wzkd2.wzkd.ui.view.SlideView;
 
 import org.xml.sax.XMLReader;
@@ -185,7 +182,6 @@ public class JieshaoActivity extends Activity
         private class MSpan extends ClickableSpan implements OnClickListener {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, bitmapid + "", Toast.LENGTH_SHORT).show();
                 //请在这里设置点击跳转的Intent，
                 /*
                 *
@@ -204,9 +200,10 @@ public class JieshaoActivity extends Activity
 
             int id = Integer.parseInt(source);
             Drawable drawable = context.getResources().getDrawable(id);
+            int picWidth=screenwidth-70;
             if (id!=R.mipmap.ic_launcher)
             {
-                drawable.setBounds(0, 0, screenwidth, drawable.getIntrinsicHeight() * (screenwidth) / drawable.getIntrinsicWidth());
+                drawable.setBounds(0, 0, picWidth, drawable.getIntrinsicHeight() * (picWidth) / drawable.getIntrinsicWidth());
             }
             else
             {
@@ -225,7 +222,7 @@ public class JieshaoActivity extends Activity
         collectedFlag=sp.getInt(weizhiname,0);
         if (collectedFlag==0)
         {
-            collect.setBackground(res.getDrawable(R.mipmap.icon_more_favorite));
+            collect.setBackground(res.getDrawable(R.mipmap.icon_detail_favorite));
         }
         else
         {
@@ -249,7 +246,7 @@ public class JieshaoActivity extends Activity
         {
             //移除收藏
             editor.putInt(weizhiname,0);
-            collect.setBackground(res.getDrawable(R.mipmap.icon_more_favorite));
+            collect.setBackground(res.getDrawable(R.mipmap.icon_detail_favorite));
             collectedFlag=0;
         }
         editor.commit();
@@ -258,7 +255,6 @@ public class JieshaoActivity extends Activity
 
     public void zhinan(View v)
     {
-        Intent intent=new Intent(context,CollectActivity.class);
-        startActivity(intent);
+        finish();
     }
 }

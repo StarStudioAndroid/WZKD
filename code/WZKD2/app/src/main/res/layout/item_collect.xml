@@ -25,12 +25,6 @@
                 android:textSize="@dimen/font_title"
                 android:layout_height="match_parent"
                 android:text="地点名称"/>
-            <!--<ImageView
-                android:layout_marginLeft="160dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@mipmap/icon_more_goright" />-->
-
         </LinearLayout>
         <LinearLayout
             android:id="@+id/llayout_right"

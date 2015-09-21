@@ -9,9 +9,10 @@
         android:layout_height="wrap_content">
         <ImageButton
             android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
             android:scaleType="fitCenter"
             android:onClick="tojieshao"
-            android:background="@mipmap/icon_more_goback"
+            android:background="@mipmap/icon_detail_goback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -19,6 +20,7 @@
             android:layout_height="wrap_content"
             android:text="出行指南"
             style="@style/style_title"
+            android:textSize="20sp"
             android:layout_centerInParent="true" />
     </RelativeLayout>
     <View
@@ -89,7 +91,7 @@
                 <TextView
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="10dp"
-                    android:textSize="20sp"
+                    style="@style/style_subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="成灌快铁" />
@@ -118,6 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
+                android:onClick="ShiKe"
                 android:src="@mipmap/shikebiao"/>
             <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
                 android:tag="特别声明："

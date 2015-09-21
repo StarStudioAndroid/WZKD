@@ -20,4 +20,5 @@ public class XuebaActivity extends Activity {
     {
         finish();
     }
+
 }

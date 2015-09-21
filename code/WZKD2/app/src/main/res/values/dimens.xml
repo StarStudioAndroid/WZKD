@@ -4,8 +4,8 @@
     <dimen name="activity_vertical_margin">10dp</dimen>
     <dimen name="expand_textview_bottom">13.0dip</dimen>
     <dimen name="expand_textview_right">11.0dip</dimen>
-    <dimen name="font_title">32px</dimen>
-    <dimen name="font_subtitle">26px</dimen>
-    <dimen name="font_content">20px</dimen>
+    <dimen name="font_title">20sp</dimen>
+    <dimen name="font_subtitle">17sp</dimen>
+    <dimen name="font_content">14sp</dimen>
     <dimen name="squareButtonSize">40dp</dimen>
 </resources>

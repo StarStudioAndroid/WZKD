@@ -35,7 +35,7 @@ public class ZhanKaiTextView extends TextView
 
   static
   {
-    MAX_LINE_NUM = 60;
+    MAX_LINE_NUM = 100;
   }
 
   public ZhanKaiTextView(Context paramContext, AttributeSet paramAttributeSet)
