@@ -7,14 +7,19 @@
         android:padding="10dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-        <ImageButton
-            android:layout_marginTop="10dp"
-            android:layout_centerVertical="true"
-            android:scaleType="fitCenter"
-            android:onClick="tojieshao"
-            android:background="@mipmap/icon_detail_goback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="40dp"
+            android:gravity="center_vertical"
+            android:onClick="zhinan"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:onClick="tojieshao"
+                android:background="@mipmap/icon_detail_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,7 +119,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10.0dip"
-                android:text="396时刻表"
+                android:text="396时刻表(点击查看大图)"
                 style="@style/style_subtitle"/>
             <ImageView
                 android:layout_width="match_parent"
@@ -122,13 +127,15 @@
                 android:scaleType="fitCenter"
                 android:onClick="ShiKe"
                 android:src="@mipmap/shikebiao"/>
-            <com.exe.feife.wzkd2.wzkd.ui.view.ZhanKaiTextView
-                android:tag="特别声明："
+            <TextView
+                android:layout_gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10.0dip"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:text="@string/zhuyi"
-                style="@style/zhinanstyle" />
+                android:textSize="@dimen/font_content"
+                android:textColor="#000000"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

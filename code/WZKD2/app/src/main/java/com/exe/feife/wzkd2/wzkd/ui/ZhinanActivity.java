@@ -24,7 +24,7 @@ public class ZhinanActivity extends Activity
     * 查看公交表大图*/
     public void ShiKe(View v)
     {
-        Toast.makeText(this,"点击查看时刻表",Toast.LENGTH_SHORT);
+        Toast.makeText(this,"点击查看时刻表",Toast.LENGTH_SHORT).show();
         //请在这里设置点击跳转的Intent，
                 /*
                 *

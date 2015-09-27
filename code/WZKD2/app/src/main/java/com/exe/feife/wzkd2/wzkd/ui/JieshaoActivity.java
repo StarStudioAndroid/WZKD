@@ -241,6 +241,7 @@ public class JieshaoActivity extends Activity
             editor.putInt(weizhiname,1);
             collect.setBackground(res.getDrawable(R.mipmap.icon_detail_favorite_selected));
             collectedFlag=1;
+            Toast.makeText(context,"您已将"+weizhiname+"添加至收藏",Toast.LENGTH_SHORT).show();
         }
         else
         {

@@ -90,17 +90,7 @@ public class CollectActivity extends Activity implements AdapterView.OnItemClick
             }
             viewHolder=(ViewHolder) v.getTag();
             viewHolder.name.setText(didian.get(position));
-//            viewHolder.View.setTag(didian.get(position));
             viewHolder.delete.setTag(didian.get(position));
-            //查看的点击事件
-            /*viewHolder.View.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(mContext, JieshaoActivity.class);
-                    intent.putExtra("weizhiname", didian.get(position));
-                    startActivity(intent);
-                }
-            });*/
             //删除的点击事件
             viewHolder.delete.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -123,6 +113,12 @@ public class CollectActivity extends Activity implements AdapterView.OnItemClick
     public void refreshView()
     {
         collectionList.setAdapter(new MyAdapter(this));
+    }
+
+    //退出
+    public void finished(View v)
+    {
+        this.finish();
     }
 
 }

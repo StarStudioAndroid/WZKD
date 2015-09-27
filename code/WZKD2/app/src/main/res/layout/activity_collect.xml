@@ -6,20 +6,28 @@
     tools:context="com.exe.feife.wzkd2.wzkd.ui.CollectActivity">
 
     <RelativeLayout
+        android:layout_gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1">
-        <ImageButton
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:background="@mipmap/icon_detail_goback"
-            android:scaleType="fitXY"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:layout_weight="0.08">
+        <LinearLayout
+            android:layout_width="40dp"
+            android:gravity="center_vertical"
+            android:onClick="zhinan"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:onClick="finished"
+                android:background="@mipmap/icon_detail_goback"
+                android:scaleType="fitXY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
         <TextView
             android:id="@+id/tv_jieshao_didianname"
             android:layout_gravity="center"
-            android:textSize="25sp"
+           style="@style/style_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
